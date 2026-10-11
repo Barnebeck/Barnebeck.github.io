@@ -5,8 +5,8 @@
 
 # Appearance
 appearance:
-  mode: system
-  color: emerald
+  mode: light
+  color: blue
 
 # SEO
 marketing:
@@ -14,8 +14,8 @@ marketing:
     site_type: Person
     local_business_type: ''
     org_name: ''
-    description: 'The highly-customizable Hugo Academic theme powered by Hugo Blox Builder. Easily create your personal academic website.'
-    twitter: 'GetResearchDev'
+    description: 'Thomas Barnebeck Andersen, Professor of Economics, University of Southern Denmark.'
+    twitter: ''
   analytics:
     google_analytics: ''
     baidu_tongji: ''
@@ -32,17 +32,17 @@ header:
     enable: true
     blox: "navbar"
     fixed_to_top: true
-    show_search: true
-    show_theme_chooser: true
+    show_search: false
+    show_theme_chooser: false
     logo:
-      text: "Your Name"
+      text: "Thomas Barnebeck Andersen"
 
 # Site footer
 footer:
   copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
+    notice: '© {year} Thomas Barnebeck Andersen'
     license:
-      enable: true
+      enable: false
       allow_derivatives: false
       share_alike: true
       allow_commercial: false
