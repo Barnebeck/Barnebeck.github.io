@@ -12,6 +12,9 @@ main:
   - name: Teaching
     url: '#teaching'
     weight: 40
+  - name: Vitae
+    url: vitae/
+    weight: 50
   - name: Contact
     url: '#contact'
     weight: 60
