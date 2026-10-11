@@ -5,7 +5,7 @@ Live at <https://barnebeck.github.io>.
 
 Built with [Hugo](https://gohugo.io) and the maintained **Hugo Blox Kit** theme (`github.com/HugoBlox/kit/modules/blox`,
 Tailwind CSS v4), deployed to GitHub Pages by GitHub Actions. Light and dark mode follow the visitor's system
-setting; the sun/moon button in the header lets visitors override it.
+setting; text is set in Fira Sans (self-hosted). The sun/moon button in the header lets visitors override it.
 
 ## Where things live
 
@@ -95,6 +95,8 @@ The look is the theme's, with a few small, self-contained additions:
   when a page has links. After a theme upgrade, delete this file and run `hugo`; if it builds, the fix is no
   longer needed.
 - `assets/css/hbx/blocks/shared/tba/site.css`: typography, spacing and list styling.
+- `assets/css/hbx/blocks/shared/tba/fonts.css` + `static/fonts/fira-sans/`: self-hosted Fira Sans (400, 500, 600, 700,
+  italic 400; OFL licence). To change the font, edit the `--tba-font` line there.
 - `i18n/en.yaml`: button labels ("Article" instead of "Source Document").
 
 Old addresses from the previous site (`/publication/...`) redirect to the new ones (`aliases:` in each file).

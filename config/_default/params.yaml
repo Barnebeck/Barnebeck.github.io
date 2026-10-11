@@ -27,9 +27,14 @@ hugoblox:
       primary: "#5fb4dc"
       secondary: "#5fb4dc"
 
-  # Modern, highly legible sans-serif (Inter) for headings and body text
+  # Typography: the "modern" pack's sizes/spacing, with Fira Sans for headings and body.
+  # Fira Sans is self-hosted (static/fonts/fira-sans/) and wired up in
+  # assets/css/hbx/blocks/shared/tba/fonts.css; "system-sans" here stops the theme loading Inter.
   typography:
     pack: "modern"
+    families:
+      heading: "system-sans"
+      body: "system-sans"
 
   layout:
     radius: "md"
