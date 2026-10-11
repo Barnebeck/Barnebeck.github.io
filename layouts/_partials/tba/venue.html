@@ -1,0 +1,19 @@
+{{/* Venue line: journal / book / review, plus volume(issue), pages. Returns markdown-free HTML. */}}
+{{- $pub := .Params.publication | default dict -}}
+{{- $type := index (.Params.publication_types | default (slice "")) 0 -}}
+{{- $out := "" -}}
+{{- if reflect.IsMap $pub -}}
+  {{- if eq $type "chapter" -}}
+    {{- $out = printf "In <em>%s</em>" $pub.name -}}
+    {{- with $pub.editor }}{{ $out = printf "%s, ed. %s" $out . }}{{ end -}}
+    {{- with $pub.publisher }}{{ $out = printf "%s. %s" $out . }}{{ end -}}
+    {{- with $pub.pages }}{{ $out = printf "%s, pp. %s" $out . }}{{ end -}}
+  {{- else -}}
+    {{- $out = printf "<em>%s</em>" $pub.name -}}
+    {{- with .Params.publication_note }}{{ $out = printf "%s in %s" . $out }}{{ end -}}
+    {{- with $pub.volume }}{{ $out = printf "%s, %v" $out . }}{{ end -}}
+    {{- with $pub.issue }}{{ $out = printf "%s(%v)" $out . }}{{ end -}}
+    {{- with $pub.pages }}{{ $out = printf "%s, %s" $out . }}{{ end -}}
+  {{- end -}}
+{{- end -}}
+{{- $out | safeHTML -}}

@@ -1,0 +1,79 @@
+schema: hugoblox/author/v1
+slug: me
+is_owner: true
+name:
+  display: Thomas Barnebeck Andersen
+  given: Thomas
+  family: Barnebeck Andersen
+role: Professor of Economics
+bio: |
+  I am a professor of economics at the University of Southern Denmark (SDU).
+
+  Prior to joining SDU, I was assistant and associate professor at the University of Copenhagen and worked as a staff economist at the Danish central bank.
+
+  My current research interests span political economy, comparative economics, and macroeconomics.
+
+affiliations:
+  - name: University of Southern Denmark
+    url: https://www.sdu.dk/en
+
+links:
+  - icon: at-symbol
+    url: mailto:barnebeck@sam.sdu.dk
+    label: E-mail
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/thomasbarnebeckandersen/
+    label: LinkedIn
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com/citations?hl=en&user=XP_ZiYYAAAAJ&view_op=list_works
+    label: Google Scholar
+
+# "Fields of interest" from the Vitae page
+interests:
+  - Comparative economics
+  - Economic development
+  - Economic history
+  - Macroeconomics
+  - Political economy
+
+education:
+  - degree: PhD (economics)
+    institution: University of Copenhagen
+    year: 2004
+  - degree: PhD student (concurrent enrollment)
+    institution: University of California, Berkeley
+    year: 2002-03
+  - degree: MSc (economics)
+    institution: University of Copenhagen
+    year: 2000
+  - degree: BSc (economics)
+    institution: University of Copenhagen
+    year: 1997
+
+# "Academic employment" from the Vitae page
+experience:
+  - role: Full Professor
+    org: Department of Economics, University of Southern Denmark (SDU)
+    start: 2012-01-01
+  - role: Professor (with special responsibilities)
+    org: Department of Economics, SDU
+    start: 2010-01-01
+    end: 2012-12-31
+  - role: Associate Professor
+    org: Department of Economics, University of Copenhagen
+    start: 2007-01-01
+    end: 2010-12-31
+  - role: Economist, Financial Markets Section
+    org: Danish Central Bank
+    start: 2006-01-01
+    end: 2007-12-31
+  - role: Assistant Professor
+    org: Department of Economics, University of Copenhagen
+    start: 2004-01-01
+    end: 2006-12-31
+
+awards:
+  - title: Knight of the Order of Dannebrog (Ridder af Dannebrogordenen)
+    date: "2024-01-01"
+  - title: Tuborg Foundation Business Economics Prize (Tuborgfondets Erhvervsøkonomiske Pris)
+    date: "2002-01-01"

@@ -1,59 +1,115 @@
-# Site settings for the Hugo Blox Bootstrap edition
+# ══════════════════════════════════════════════════════════════════════════════
+# HUGO BLOX CONFIGURATION (schema v2) — Thomas Barnebeck Andersen
 # Docs: https://docs.hugoblox.com/
+# ══════════════════════════════════════════════════════════════════════════════
+hugoblox:
+  schema: "2.0"
 
-appearance:
-  theme_day: academic_blue    # data/themes/academic_blue.toml
-  theme_night: academic_blue
-  font: academic              # data/fonts/academic.toml (Montserrat + Roboto)
-  font_size: L
+  identity:
+    name: "Thomas Barnebeck Andersen"
+    organization: "University of Southern Denmark"
+    type: person
+    tagline: "Professor of Economics"
+    description: "Thomas Barnebeck Andersen, Professor of Economics at the University of Southern Denmark (SDU). Research in political economy, comparative economics, and macroeconomics."
+    social:
+      twitter: ""
 
-marketing:
-  seo:
-    site_type: Person
-    description: 'Thomas Barnebeck Andersen, Professor of Economics, University of Southern Denmark.'
-    twitter: ''
-  analytics:
-    google_analytics: ''
+  # Colours and dark mode. `mode: system` follows the visitor's OS setting.
+  theme:
+    mode: system
+    pack: "default"
+    colors:
+      primary: "#0b6e99"   # restrained academic blue (close to the previous site's #006699)
+      secondary: "#0b6e99"
+      neutral: "slate"
+    colors_light: {}
+    colors_dark:
+      primary: "#5fb4dc"
+      secondary: "#5fb4dc"
 
-header:
-  navbar:
+  # Modern, highly legible sans-serif (Inter) for headings and body text
+  typography:
+    pack: "modern"
+
+  layout:
+    radius: "md"
+    spacing: "spacious"
+    avatar_shape: circle
+
+  header:
     enable: true
-    align: l
-    show_logo: true   # shows the site title as the brand (no logo image)
-    show_language: false
-    show_day_night: false
-    show_search: false
-    highlight_active_link: true
-
-footer:
-  copyright:
-    notice: '© {year} Thomas Barnebeck Andersen'
-    license:
+    style: navbar
+    sticky: true
+    align: center
+    search: false
+    theme_toggle: true      # lets visitors override the system light/dark setting
+    theme_picker: false
+    language_switcher: false
+    cta:
       enable: false
 
-locale:
-  date_format: 'Jan 2, 2006'
-  time_format: '3:04 PM'
-  address_format: en-us
+  footer:
+    style: minimal
+    language_switcher: false
+    text: ""
 
-features:
-  avatar:
-    gravatar: false
-    shape: circle
-  math:
-    enable: false
-  privacy_pack:
-    enable: false
+  copyright:
+    notice: "© {year} Thomas Barnebeck Andersen"
+    license:
+      type: custom
+
+  seo:
+    title: ""
+    location:
+      address:
+        street: "Campusvej 55"
+        city: "Odense"
+        region: ""
+        postal_code: "DK-5230"
+        country: "Denmark"
+      coordinates:
+        latitude: null
+        longitude: null
+      phone: "+45 24782033"
+    ai:
+      allow:
+        - /
+      disallow: []
+      note: ""
+      contact: ""
+
+  content:
+    math:
+      enable: false
+    toc:
+      enable: false
+    reading_time:
+      enable: false
+    citations:
+      style: apa
+
   search:
-    provider: ''
+    enable: false
 
-publications:
-  date_format: January 2006
-  citation_style: apa
+  comments:
+    enable: false
 
-power_ups:
-  hide_published_with: false
+  analytics: {}
+  verification: {}
 
-extensions:
-  academicons:
-    enable: true   # needed for the Google Scholar icon
+  repository:
+    enable: false
+
+  locale:
+    date_format: "Jan 2, 2006"
+    time_format: "3:04 PM"
+    address_format: en-us
+
+  privacy:
+    enable: false
+
+  debug:
+    enable: false
+
+  pro:
+    hide_attribution: false

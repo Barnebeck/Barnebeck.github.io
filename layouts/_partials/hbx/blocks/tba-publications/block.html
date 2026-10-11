@@ -1,0 +1,15 @@
+{{/* Home page publication list: the most recent journal articles. */}}
+{{ $page := .wcPage }}
+{{ $c := .wcBlock.content | default dict }}
+{{ $groups := partial "tba/pub_groups.html" . }}
+{{ $articles := (index $groups 0).pages }}
+{{ $total := 0 }}{{ range $groups }}{{ $total = add $total (len .pages) }}{{ end }}
+<div class="tba-wrap tba-section">
+  <div class="tba-head-row">
+    <h2 class="tba-h2">{{ $c.title | default "Recent publications" }}</h2>
+    <a class="tba-more" href="{{ "publications/" | relURL }}">All {{ $total }} publications →</a>
+  </div>
+  <ol class="tba-pubs">
+    {{ range first ($c.count | default 8) $articles }}{{ partial "tba/citation.html" . }}{{ end }}
+  </ol>
+</div>

@@ -1,0 +1,134 @@
+/* ==========================================================================
+   Site styles for barnebeck.github.io (restrained academic layout).
+   Loaded automatically by the Hugo Blox CSS pipeline (assets/css/hbx/blocks/shared/).
+   Colours use the theme's variables, so light/dark mode follow config/_default/params.yaml.
+   ========================================================================== */
+
+:root {
+  --tba-text: rgb(30 41 59);          /* slate-800 */
+  --tba-muted: rgb(71 85 105);        /* slate-600 */
+  --tba-faint: rgb(100 116 139);      /* slate-500 */
+  --tba-rule: rgb(226 232 240);       /* slate-200 */
+  --tba-tint: rgb(248 250 252);       /* slate-50 */
+  --tba-link: var(--color-primary-700);
+  --tba-measure: 46rem;               /* reading width */
+}
+.dark {
+  --tba-text: rgb(226 232 240);
+  --tba-muted: rgb(176 190 208);
+  --tba-faint: rgb(148 163 184);
+  --tba-rule: rgb(51 65 85);
+  --tba-tint: rgb(15 23 42 / 0.6);
+  --tba-link: var(--color-primary-300);
+}
+
+/* Sections on landing pages: even rhythm, thin dividers, no backgrounds */
+.hbb-section:has(> .tba-wrap) { padding: 0; }
+.tba-wrap {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 3.5rem 1.5rem;
+  color: var(--tba-text);
+}
+.hbb-section + .hbb-section .tba-wrap { border-top: 1px solid var(--tba-rule); }
+.tba-section > * { max-width: var(--tba-measure); }
+.tba-section > .tba-head-row,
+.tba-section > .tba-pubs,
+.tba-section > .tba-group { max-width: 52rem; }
+.tba-page { padding-top: 1rem; padding-bottom: 3rem; }
+
+/* Headings */
+.tba-h1 { font-size: clamp(1.9rem, 3.2vw, 2.5rem); line-height: 1.15; font-weight: 700; letter-spacing: -0.02em; margin: 0 0 1rem; }
+.tba-h2 { font-size: 1.5rem; line-height: 1.25; font-weight: 650; letter-spacing: -0.015em; margin: 0 0 1.25rem; }
+.tba-h3 { font-size: 0.8rem; font-weight: 650; letter-spacing: 0.08em; text-transform: uppercase; color: var(--tba-faint); margin: 2rem 0 0.75rem; }
+.tba-subtitle { color: var(--tba-muted); margin: -0.75rem 0 1.5rem; }
+
+/* Body copy */
+.tba-prose { font-size: 1.0625rem; line-height: 1.7; }
+.tba-prose p { margin: 0 0 0.9em; }
+.tba-prose a, .tba-pub-venue a, .tba-affil a, .tba-more, .tba-kicker a { color: var(--tba-link); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; text-decoration-color: color-mix(in srgb, currentColor 35%, transparent); }
+.tba-prose a:hover, .tba-more:hover, .tba-kicker a:hover { text-decoration-color: currentColor; }
+.tba-prose ul { list-style: disc; padding-left: 1.25rem; }
+.tba-prose ul > li { margin-bottom: 0.5em; padding-left: 0.15rem; }
+.tba-prose ul > li::marker { color: var(--tba-faint); }
+.tba-prose h3 { font-size: 1.125rem; font-weight: 650; margin: 2rem 0 0.75rem; }
+.tba-prose h3:first-child { margin-top: 0; }
+.tba-prose strong { font-weight: 650; }
+.tba-prose p + ul { margin-top: -0.4em; }
+
+/* Profile (home) */
+.tba-profile { display: grid; grid-template-columns: 15rem 1fr; gap: 3.5rem; align-items: start; padding-top: 4rem; }
+.tba-profile-card { text-align: left; }
+.tba-avatar { width: 12rem; height: 12rem; border-radius: 9999px; object-fit: cover; margin-bottom: 1.25rem; }
+.tba-name { font-size: 1.5rem; line-height: 1.2; font-weight: 700; letter-spacing: -0.015em; margin: 0; }
+.tba-role { margin: 0.35rem 0 0; color: var(--tba-muted); font-weight: 500; }
+.tba-affil { margin: 0.1rem 0 0; color: var(--tba-muted); }
+.tba-links { list-style: none; padding: 0; margin: 1.25rem 0 0; display: grid; gap: 0.45rem; font-size: 0.95rem; }
+.tba-links a { display: inline-flex; align-items: center; gap: 0.55rem; color: var(--tba-muted); }
+.tba-links a:hover { color: var(--tba-link); }
+.tba-icon { width: 1.05rem; height: 1.05rem; flex: none; }
+.tba-profile-body .tba-h2 { margin-top: 0.25rem; }
+.tba-bio { max-width: var(--tba-measure); }
+.tba-profile-lists { display: grid; grid-template-columns: 1fr 1.6fr; gap: 2.5rem; max-width: var(--tba-measure); }
+.tba-plain { list-style: none; padding: 0; margin: 0; }
+.tba-plain li { margin-bottom: 0.4rem; line-height: 1.5; }
+.tba-edu-deg { font-weight: 600; }
+.tba-edu-year { color: var(--tba-faint); margin-left: 0.4rem; font-variant-numeric: tabular-nums; }
+@media (max-width: 760px) {
+  .tba-profile { grid-template-columns: 1fr; gap: 2rem; padding-top: 2.5rem; }
+  .tba-profile-card { text-align: center; }
+  .tba-avatar { width: 9rem; height: 9rem; margin-left: auto; margin-right: auto; }
+  .tba-links { justify-content: center; grid-auto-flow: column; gap: 1.25rem; }
+  .tba-links span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .tba-icon { width: 1.35rem; height: 1.35rem; }
+  .tba-profile-lists { grid-template-columns: 1fr; gap: 0; }
+  .tba-wrap { padding: 2.5rem 1.25rem; }
+}
+
+/* Publication lists */
+.tba-head-row { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; flex-wrap: wrap; margin-bottom: 0.5rem; }
+.tba-head-row .tba-h2 { margin: 0; }
+.tba-more { font-size: 0.95rem; }
+.tba-pubs { list-style: none; padding: 0; margin: 0; }
+.tba-pub { padding: 1.1rem 0; border-bottom: 1px solid var(--tba-rule); }
+.tba-pub:last-child { border-bottom: 0; }
+.tba-pub-title { font-size: 1.075rem; font-weight: 600; line-height: 1.4; }
+.tba-pub-title a { color: var(--tba-text); }
+.tba-pub-title a:hover { color: var(--tba-link); text-decoration: underline; text-underline-offset: 3px; }
+.tba-pub-meta { color: var(--tba-muted); margin-top: 0.2rem; font-size: 0.95rem; }
+.tba-me { font-weight: 600; color: var(--tba-text); }
+.tba-sep { color: var(--tba-faint); margin: 0 0.25rem; }
+.tba-pub-venue { color: var(--tba-muted); font-size: 0.95rem; }
+.tba-pub-links { margin-top: 0.45rem; }
+.tba-pub-links .hb-attachment-link { text-transform: none; letter-spacing: 0; font-weight: 500; font-size: 0.85rem; margin-right: 0.5rem; padding: 0.12rem 0.55rem !important; border: 1px solid var(--tba-rule); border-radius: 0.375rem; color: var(--tba-link); }
+.tba-pub-links .hb-attachment-link:hover { border-color: var(--tba-link); text-decoration: none; }
+.tba-pub-links .hb-attachment-link svg { display: none; }
+
+/* Research page */
+.tba-intro { color: var(--tba-muted); font-size: 1rem; }
+.tba-jump { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; margin: 1.5rem 0 1rem; padding-bottom: 1rem; border-bottom: 1px solid var(--tba-rule); font-size: 0.95rem; max-width: 52rem; }
+.tba-jump a { color: var(--tba-link); font-weight: 500; }
+.tba-jump span { color: var(--tba-faint); font-variant-numeric: tabular-nums; margin-left: 0.2rem; }
+.tba-group { margin-top: 2.5rem; scroll-margin-top: 5rem; }
+.tba-group .tba-h2 { margin-bottom: 0.25rem; }
+
+/* Publication detail page */
+.tba-kicker { font-size: 0.9rem; color: var(--tba-faint); margin: 0 0 1rem; }
+.tba-kicker span { margin: 0 0.35rem; }
+.tba-pub-meta-lg, .tba-pub-venue-lg { font-size: 1.05rem; margin: 0.25rem 0; }
+.tba-pub-links-lg { margin: 1rem 0 0.5rem; }
+.tba-abstract { max-width: var(--tba-measure); }
+.tba-bib { position: relative; max-width: var(--tba-measure); }
+.tba-bib pre { background: var(--tba-tint); border: 1px solid var(--tba-rule); border-radius: 0.5rem; padding: 1rem; overflow-x: auto; font-size: 0.82rem; line-height: 1.55; margin-top: 0.6rem; color: var(--tba-text); white-space: pre; }
+.tba-copy { display: inline-block; font-size: 0.85rem; font-weight: 500; padding: 0.2rem 0.65rem; border: 1px solid var(--tba-rule); border-radius: 0.375rem; color: var(--tba-link); margin-right: 0.4rem; cursor: pointer; }
+.tba-copy:hover { border-color: var(--tba-link); }
+
+/* Theme chrome: keep the header and footer quiet */
+.page-header, header.page-header { box-shadow: none; }
+
+/* Inner pages: a little less top space than landing sections */
+.tba-page .tba-wrap { padding-top: 2.5rem; }
+.tba-bib pre { white-space: pre-wrap; word-break: break-word; }
+/* Stand-alone landing pages (Commentary, Vitae) */
+.tba-section > .tba-h1:first-child { margin-top: 0; }
+.tba-prose h3 { font-size: 1.15rem; }

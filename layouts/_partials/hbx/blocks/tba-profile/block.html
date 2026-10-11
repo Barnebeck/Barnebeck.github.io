@@ -1,0 +1,44 @@
+{{/* Profile block: photo, name, role, affiliation, links | bio, research interests, education.
+     All data comes from data/authors/me.yaml. */}}
+{{ $block := .wcBlock }}
+{{ $c := $block.content | default dict }}
+{{ $p := partial "functions/get_author_profile" ($c.username | default "me") }}
+<div class="tba-wrap tba-profile">
+  <div class="tba-profile-card">
+    {{ with $p.avatar }}
+      {{ $img := .Process "Fill 400x400 Center webp" }}
+      <img class="tba-avatar" src="{{ $img.RelPermalink }}" width="200" height="200" alt="{{ $p.title }}">
+    {{ end }}
+    <h1 class="tba-name">{{ $p.title }}</h1>
+    {{ with $p.role }}<p class="tba-role">{{ . }}</p>{{ end }}
+    {{ range $p.affiliations }}
+      <p class="tba-affil">{{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}{{ .name }}{{ if .url }}</a>{{ end }}</p>
+    {{ end }}
+    <ul class="tba-links">
+      {{ range $p.links }}
+      <li><a href="{{ .url }}" {{ if not (hasPrefix .url "mailto:") }}target="_blank" rel="noopener"{{ end }} aria-label="{{ .label }}">
+        {{ partial "functions/get_icon" (dict "name" .icon "attributes" "class='tba-icon' aria-hidden='true'") }}<span>{{ .label }}</span></a></li>
+      {{ end }}
+    </ul>
+  </div>
+  <div class="tba-profile-body">
+    <h2 class="tba-h2">{{ $c.title | default "About" }}</h2>
+    <div class="tba-prose tba-bio">{{ $p.bio | markdownify }}</div>
+    <div class="tba-profile-lists">
+      {{ with $p.interests }}
+      <div>
+        <h3 class="tba-h3">Research interests</h3>
+        <ul class="tba-plain">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>
+      </div>
+      {{ end }}
+      {{ with $p.education }}
+      <div>
+        <h3 class="tba-h3">Education</h3>
+        <ul class="tba-plain tba-edu">
+          {{ range . }}<li><span class="tba-edu-deg">{{ .degree }}</span>, {{ .institution }}<span class="tba-edu-year">{{ .year }}</span></li>{{ end }}
+        </ul>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>

@@ -3,10 +3,14 @@ title: Commentary
 type: landing
 
 sections:
-  - block: markdown
+  - block: tba-section
     content:
-      title: Danish
+      heading: page
+      title: Commentary
+      subtitle: Op-eds, columns and blog posts
       text: |-
+        ### Danish
+
         - Det er blevet for nemt at indskrænke vores frihed. Sådan gør vi det sværere, Berlingske (kronik), 2026. [Article link](https://www.berlingske.dk/kronikker/det-er-blevet-for-nemt-at-indskraenke-vores-frihed-mener-professor-nu-peger-han-paa-hvordan-vi-goer-det-svaerere)
         - Hvad vil Trump opnå med sin told? Ræson (kommentar), 2025. [Article link](https://drive.google.com/file/d/1lg0nIQqZtKwlPW18kvYrAbBPmVvMi_Wk/view?usp=sharing)
         - Fælles gæld er næppe løsningen på EU's mange udfordringer, Berlingske (kommentar), 2024. [Article link](https://drive.google.com/file/d/1hrXsiW2lC3yvM58MLkYlBlOSULaHTzAx/view?usp=sharing)
@@ -39,12 +43,9 @@ sections:
         - Stor ståhej om mikroskopiske lån i bistandsarbejdet (with Nikolaj Malchow-Møller og Ole Dahl Rasmussen), Kristeligt Dagblad (kronik), 2011.
         - Frihed frem for forandring? Politik 13(3): 73-75, 2010.
         - Der er brug for nytænkning i bistandspolitikken (with Sam Jones), Information (kronik), 2008.
-    design:
-      columns: '2'
-  - block: markdown
-    content:
-      title: English
-      text: |-
+
+        ### English
+
         - EU membership has many benefits, but economic growth is not one of them (with Pieter Vanhuysse), The Conversation [reprinted by World Economic Forum], 2019. [Article link](https://doi.org/10.64628/AB.57kwc4pat)
         - The Catholic work ethic: Weber may have been wrong in linking hard work to Protestantism (with Jeanet Bentzen, Carl-Johan Dalgaard, and Paul Sharp), LSE blogs, London School of Economics and Political Science, 2018. [Article Link](https://blogs.lse.ac.uk/religionglobalsociety/2018/08/the-catholic-work-ethic-weber-may-have-been-wrong-in-linking-hard-work-to-protestantism/)
         - Pre-reformation roots of the protestant ethic: Evidence of a nine centuries-old belief in the virtues of hard work stimulating economic growth (with Jeanet Bentzen, Carl-Johan Dalgaard, and Paul Sharp), VoxEU column, 2017. [Article link](https://cepr.org/voxeu/columns/pre-reformation-roots-protestant-ethic-evidence-nine-centuries-old-belief-virtues)
@@ -52,6 +53,4 @@ sections:
         - Greece’s poor growth prospects (with Mikkel Barslund), CEPS Commentary, Center for European Policy Studies, 2015. [Article link](https://www.ceps.eu/ceps-publications/greeces-poor-growth-prospects/)
         - Danish currency wobbles: A positive unintended side effect of the ECB’s QE? (with Cinzia Alcidi and Mikkel Barslund), CEPS Commentary, Center for European Policy Studies, 2015. [Article link](https://www.ceps.eu/ceps-publications/danish-currency-wobbles-positive-unintended-side-effect-ecbs-qe/)
         - Can Greece ‘grow solvent’? (with Mikkel Barslund and Daniel Gros), CEPS Commentary, Center for European Policy Studies, 2011. [Article link](https://www.ceps.eu/ceps-publications/can-greece-grow-solvent/)
-    design:
-      columns: '2'
 ---

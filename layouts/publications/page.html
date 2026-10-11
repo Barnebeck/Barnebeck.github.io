@@ -1,0 +1,31 @@
+{{ define "main" }}
+{{/* Publication detail page: citation, links, abstract and BibTeX. */}}
+{{ $bib := .Resources.GetMatch "cite.bib" }}
+{{ $type := index (.Params.publication_types | default (slice "")) 0 }}
+{{ $typeLabel := dict "article-journal" "Journal article" "chapter" "Book chapter" "article" "Book review" "report" "Report" }}
+<div class="tba-page">
+  <article class="tba-wrap tba-section tba-pub-page">
+    <p class="tba-kicker"><a href="{{ "publications/" | relURL }}">Research</a> <span>/</span> {{ index $typeLabel $type | default "Publication" }}</p>
+    <h1 class="tba-h1">{{ .Title }}</h1>
+    <p class="tba-pub-meta tba-pub-meta-lg">{{ partial "tba/authors.html" . }} <span class="tba-sep">·</span> {{ .Date.Format "2006" }}</p>
+    <p class="tba-pub-venue tba-pub-venue-lg">{{ partial "tba/venue.html" . }}{{ with .Params.hugoblox.ids.doi }} <span class="tba-sep">·</span> <a href="https://doi.org/{{ . }}" target="_blank" rel="noopener">doi:{{ . }}</a>{{ end }}</p>
+    <div class="tba-pub-links tba-pub-links-lg">{{ partial "page_links" (dict "page" . "is_list" 0) }}</div>
+
+    {{ with .Params.abstract }}
+    <h2 class="tba-h3">Abstract</h2>
+    <div class="tba-prose tba-abstract">{{ . | markdownify }}</div>
+    {{ end }}
+
+    {{ with .Content }}<div class="tba-prose">{{ . }}</div>{{ end }}
+
+    {{ with $bib }}
+    <h2 class="tba-h3">Cite</h2>
+    <div class="tba-bib">
+      <button class="tba-copy js-cite-clipboard" type="button" data-filename="{{ .RelPermalink }}">Copy BibTeX</button>
+      <a class="tba-copy" href="{{ .RelPermalink }}" download>Download .bib</a>
+      <pre><code>{{ .Content }}</code></pre>
+    </div>
+    {{ end }}
+  </article>
+</div>
+{{ end }}

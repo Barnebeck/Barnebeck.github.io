@@ -1,38 +1,25 @@
 ---
-title: ""
+title: ''
+summary: ''
 type: landing
 
 sections:
-  - block: about.biography
+  - block: tba-profile
     id: about
     content:
-      title: ""
-      username: admin
+      username: me
+      title: About
 
-  - block: collection
+  - block: tba-publications
     id: publications
     content:
-      title: Recent work
-      subtitle: ""
-      text: ""
-      count: 10
-      filters:
-        folders:
-          - publication
-        publication_type: article-journal   # journal articles only (no book chapters/reviews)
-      archive:
-        enable: true
-        text: See all publications
-        link: publication/
-    design:
-      view: citation
-      columns: '2'
+      title: Recent publications
+      count: 8
 
-  - block: markdown
+  - block: tba-section
     id: commentary
     content:
       title: Commentary
-      subtitle: ""
       text: |-
         - Det er blevet for nemt at indskrænke vores frihed. Sådan gør vi det sværere, Berlingske (kronik), 2026. [Article link](https://www.berlingske.dk/kronikker/det-er-blevet-for-nemt-at-indskraenke-vores-frihed-mener-professor-nu-peger-han-paa-hvordan-vi-goer-det-svaerere)
         - Hvad vil Trump opnå med sin told? Ræson (kommentar), 2025. [Article link](https://drive.google.com/file/d/1lg0nIQqZtKwlPW18kvYrAbBPmVvMi_Wk/view?usp=sharing)
@@ -41,15 +28,12 @@ sections:
         - EU membership has many benefits, but economic growth is not one of them (with Pieter Vanhuysse), The Conversation [reprinted by World Economic Forum], 2019. [Article link](https://doi.org/10.64628/AB.57kwc4pat)
         - The Catholic work ethic: Weber may have been wrong in linking hard work to Protestantism (with Jeanet Bentzen, Carl-Johan Dalgaard, and Paul Sharp), LSE blogs, London School of Economics and Political Science, 2018. [Article Link](https://blogs.lse.ac.uk/religionglobalsociety/2018/08/the-catholic-work-ethic-weber-may-have-been-wrong-in-linking-hard-work-to-protestantism/)
 
-        [See all commentary →](commentary/)
-    design:
-      columns: '2'
+        [All commentary (Danish and English) →](commentary/)
 
-  - block: markdown
+  - block: tba-section
     id: teaching
     content:
       title: Teaching
-      subtitle: ""
       text: |-
         **Advanced Macroeconomics (MSc)**
 
@@ -62,34 +46,18 @@ sections:
         **The Economics of European Integration (BSc)**
 
         - Focuses on European monetary integration.
-    design:
-      columns: '2'
 
-  - block: contact
+  - block: tba-section
     id: contact
     content:
       title: Contact
-      subtitle: ""
-      text: ""
-      email: barnebeck@sam.sdu.dk
-      phone: (+45) 24782033
-      address:
-        street: Campusvej 55
-        city: Odense
-        region: ""
-        postcode: DK-5230
-        country: Denmark
-        country_code: DK
-      contact_links:
-        - icon: linkedin
-          icon_pack: fab
-          name: LinkedIn
-          link: https://www.linkedin.com/in/thomasbarnebeckandersen/
-        - icon: google-scholar
-          icon_pack: ai
-          name: Google Scholar
-          link: https://scholar.google.com/citations?hl=en&user=XP_ZiYYAAAAJ&view_op=list_works
-      autolink: true
-    design:
-      columns: '2'
+      text: |-
+        Thomas Barnebeck Andersen  
+        Professor of Economics  
+        University of Southern Denmark  
+        Campusvej 55, DK-5230 Odense, Denmark
+
+        Tel: [(+45) 24782033](tel:+4524782033)  
+        Email: [barnebeck@sam.sdu.dk](mailto:barnebeck@sam.sdu.dk)  
+        [LinkedIn](https://www.linkedin.com/in/thomasbarnebeckandersen/) · [Google Scholar](https://scholar.google.com/citations?hl=en&user=XP_ZiYYAAAAJ&view_op=list_works)
 ---

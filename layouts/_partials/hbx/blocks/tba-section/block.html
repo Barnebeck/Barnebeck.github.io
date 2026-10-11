@@ -1,0 +1,11 @@
+{{/* Plain text section: heading + optional subtitle + markdown, left-aligned at reading width.
+     Set `content.heading: page` to render the title as the page's main H1 (stand-alone pages). */}}
+{{ $page := .wcPage }}
+{{ $c := .wcBlock.content | default dict }}
+<div class="tba-wrap tba-section">
+  {{ with $c.title }}
+    {{ if eq $c.heading "page" }}<h1 class="tba-h1">{{ . | $page.RenderString }}</h1>{{ else }}<h2 class="tba-h2">{{ . | $page.RenderString }}</h2>{{ end }}
+  {{ end }}
+  {{ with $c.subtitle }}<p class="tba-subtitle">{{ . | $page.RenderString }}</p>{{ end }}
+  {{ with $c.text }}<div class="tba-prose">{{ . | $page.RenderString (dict "display" "block") }}</div>{{ end }}
+</div>

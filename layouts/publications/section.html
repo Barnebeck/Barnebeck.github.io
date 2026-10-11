@@ -1,0 +1,21 @@
+{{ define "main" }}
+{{/* Research page: all publications grouped by type, newest first within each group. */}}
+{{ $groups := partial "tba/pub_groups.html" . }}
+<div class="tba-page">
+  <div class="tba-wrap tba-section">
+    <h1 class="tba-h1">{{ .Title }}</h1>
+    {{ with .Content }}<div class="tba-prose tba-intro">{{ . }}</div>{{ end }}
+    <nav class="tba-jump" aria-label="Publication groups">
+      {{ range $groups }}{{ if .pages }}<a href="#{{ .id }}">{{ .title }} <span>{{ len .pages }}</span></a>{{ end }}{{ end }}
+    </nav>
+    {{ range $groups }}
+      {{ if .pages }}
+      <section id="{{ .id }}" class="tba-group">
+        <h2 class="tba-h2">{{ .title }}</h2>
+        <ol class="tba-pubs">{{ range .pages }}{{ partial "tba/citation.html" . }}{{ end }}</ol>
+      </section>
+      {{ end }}
+    {{ end }}
+  </div>
+</div>
+{{ end }}

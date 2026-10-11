@@ -1,0 +1,5 @@
+# Label overrides for the theme's publication buttons
+- id: btn_source
+  translation: Article
+- id: btn_site
+  translation: Record

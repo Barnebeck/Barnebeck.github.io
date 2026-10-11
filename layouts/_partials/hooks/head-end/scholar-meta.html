@@ -1,0 +1,31 @@
+{{/* Google Scholar (Highwire Press) citation meta tags on each publication page.
+     See https://scholar.google.com/intl/en/scholar/inclusion.html#indexing */}}
+{{ if and .IsPage (eq .Section "publications") }}
+  {{ $pub := .Params.publication | default dict }}
+  {{ $type := index (.Params.publication_types | default (slice "")) 0 }}
+  <meta name="citation_title" content="{{ .Title }}">
+  {{ range .Params.authors }}
+    {{ $p := partial "functions/get_author_profile" (dict "slug" (. | urlize) "title" .) }}
+    <meta name="citation_author" content="{{ $p.title | default . }}">
+  {{ end }}
+  <meta name="citation_publication_date" content="{{ .Date.Format "2006" }}">
+  {{ if reflect.IsMap $pub }}
+    {{ with $pub.name }}
+      {{ if eq $type "chapter" }}<meta name="citation_inbook_title" content="{{ . }}">
+      {{ else if eq $type "report" }}<meta name="citation_technical_report_institution" content="{{ . }}">
+      {{ else }}<meta name="citation_journal_title" content="{{ . }}">{{ end }}
+    {{ end }}
+    {{ with $pub.volume }}<meta name="citation_volume" content="{{ . }}">{{ end }}
+    {{ with $pub.issue }}<meta name="citation_issue" content="{{ . }}">{{ end }}
+    {{ with $pub.pages }}
+      {{ $pp := split (replace . "–" "-") "-" }}
+      <meta name="citation_firstpage" content="{{ index $pp 0 }}">
+      {{ if gt (len $pp) 1 }}<meta name="citation_lastpage" content="{{ index $pp 1 }}">{{ end }}
+    {{ end }}
+    {{ with $pub.publisher }}<meta name="citation_publisher" content="{{ . }}">{{ end }}
+  {{ end }}
+  {{ with .Params.hugoblox.ids.doi }}<meta name="citation_doi" content="{{ . }}">{{ end }}
+  {{ range .Params.links }}{{ if eq .type "pdf" }}<meta name="citation_pdf_url" content="{{ .url }}">{{ end }}{{ end }}
+  {{ with .Params.abstract }}<meta name="citation_abstract" content="{{ . | plainify }}">{{ end }}
+  <meta name="citation_abstract_html_url" content="{{ .Permalink }}">
+{{ end }}

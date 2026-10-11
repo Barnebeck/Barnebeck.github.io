@@ -1,0 +1,12 @@
+{{/* One publication entry: title, authors, venue · year, then links (Article / PDF / DOI / Cite).
+     Titles are shown as-is, so a title ending in "?" never gets an extra full stop. */}}
+{{ $item := . }}
+<li class="tba-pub">
+  <div class="tba-pub-title"><a href="{{ $item.RelPermalink }}">{{ $item.Title }}</a></div>
+  <div class="tba-pub-meta">
+    {{ partial "tba/authors.html" $item }}
+    <span class="tba-sep">·</span> {{ $item.Date.Format "2006" }}
+  </div>
+  <div class="tba-pub-venue">{{ partial "tba/venue.html" $item }}</div>
+  <div class="tba-pub-links">{{ partial "page_links" (dict "page" $item "is_list" 1) }}</div>
+</li>

@@ -1,0 +1,15 @@
+{{/* Publication groups used on the Research page (and counted on the home page). */}}
+{{ $all := (where site.RegularPages "Section" "publications").ByDate.Reverse }}
+{{ $groups := slice
+  (dict "id" "articles" "title" "Journal articles" "types" (slice "article-journal" "report"))
+  (dict "id" "chapters" "title" "Book chapters" "types" (slice "chapter"))
+  (dict "id" "reviews"  "title" "Book reviews" "types" (slice "article"))
+}}
+{{ $out := slice }}
+{{ range $groups }}
+  {{ $types := .types }}
+  {{ $pages := slice }}
+  {{ range $all }}{{ if in $types (index .Params.publication_types 0) }}{{ $pages = $pages | append . }}{{ end }}{{ end }}
+  {{ $out = $out | append (merge . (dict "pages" $pages)) }}
+{{ end }}
+{{ return $out }}

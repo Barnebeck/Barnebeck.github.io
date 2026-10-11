@@ -1,0 +1,8 @@
+{{/* Author list for a publication: "A, B and C". The site owner is marked with .tba-me */}}
+{{- $authors := .Params.authors | default slice -}}
+{{- $n := len $authors -}}
+{{- range $i, $raw := $authors -}}
+  {{- $p := partial "functions/get_author_profile" (dict "slug" ($raw | urlize) "title" $raw) -}}
+  {{- if gt $i 0 }}{{ if eq (add $i 1) $n }} and {{ else }}, {{ end }}{{ end -}}
+  <span{{ if $p.is_owner }} class="tba-me"{{ end }}>{{ $p.title | default $raw }}</span>
+{{- end -}}
