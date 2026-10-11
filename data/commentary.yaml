@@ -1,0 +1,199 @@
+# Commentary: op-eds, columns and blog posts. Newest first within each language.
+# Fields: title, outlet, year, url (optional), with (optional co-authors), lang (da | en).
+# Add a new piece at the top of its language group. The home page shows the 5 most recent.
+items:
+  - title: "Det er blevet for nemt at indskrænke vores frihed. Sådan gør vi det sværere"
+    outlet: "Berlingske (kronik)"
+    year: 2026
+    url: "https://www.berlingske.dk/kronikker/det-er-blevet-for-nemt-at-indskraenke-vores-frihed-mener-professor-nu-peger-han-paa-hvordan-vi-goer-det-svaerere"
+    lang: da
+  - title: "Hvad vil Trump opnå med sin told?"
+    outlet: "Ræson (kommentar)"
+    year: 2025
+    url: "https://drive.google.com/file/d/1lg0nIQqZtKwlPW18kvYrAbBPmVvMi_Wk/view?usp=sharing"
+    lang: da
+  - title: "Fælles gæld er næppe løsningen på EU's mange udfordringer"
+    outlet: "Berlingske (kommentar)"
+    year: 2024
+    url: "https://drive.google.com/file/d/1hrXsiW2lC3yvM58MLkYlBlOSULaHTzAx/view?usp=sharing"
+    lang: da
+  - title: "Demografiske forandringer sønderriver de europæiske samfund"
+    outlet: "Jyllands-Posten (kronik)"
+    year: 2024
+    url: "https://drive.google.com/file/d/1kzl0pnBfEovGfU5h5nYtIlushn8X2SLY/view?usp=sharing"
+    lang: da
+  - title: "Er finanspolitisk undtagelsestilstand blevet normen i EU?"
+    outlet: "Berlingske (kommentar)"
+    year: 2024
+    url: "https://drive.google.com/file/d/1xie7Gp1iC61e4gPEAiU1UARWj5UvqivK/view?usp=sharing"
+    lang: da
+  - title: "Det er svært at finde et gennemført argument for en fortsat liberal indvandringspolitik i EU"
+    outlet: "Politiken (debatindlæg)"
+    year: 2023
+    url: "https://drive.google.com/file/d/15fh2MNe2XQoQQKOsUJ8kjXXEFZooVnTd/view?usp=sharing"
+    lang: da
+  - title: "Ukraine er fattigere end Sri Lanka og mere korrupt end Egypten. Sådan bliver de medlemmer af EU"
+    outlet: "Berlingske (kronik)"
+    year: 2023
+    url: "https://drive.google.com/file/d/1c_GvOeVzZ0vARY7_YusNpy67feW6LVPH/view?usp=sharing"
+    lang: da
+  - title: "Euroen har lagt det italienske demokrati i gyldne lænker"
+    outlet: "Altinget (kronik)"
+    year: 2022
+    url: "https://www.altinget.dk/eu/artikel/professor-euroen-har-lagt-det-italienske-demokrati-i-gyldne-laenker"
+    lang: da
+  - title: "Indlemmelse af Ukraine vil gøre EU mere østeuropæisk"
+    outlet: "Erhverv+ (kronik)"
+    year: 2022
+    url: "https://drive.google.com/file/d/1c_GvOeVzZ0vARY7_YusNpy67feW6LVPH/view?usp=sharing"
+    lang: da
+  - title: "Statsgæld og demografi giver medvind til inflationen"
+    outlet: "Børsen (debatindlæg)"
+    year: 2021
+    url: "https://drive.google.com/file/d/1xQ1SKdb-8gR-5Jjn2C6Bg1XcZijR2a3A/view?usp=sharing"
+    lang: da
+  - title: "Nej, Danmark skal ikke poste milliarder i skrantende eurolandes selvskabte morads"
+    outlet: "Politiken (debatindlæg)"
+    year: 2020
+    with: "Asker Voldsgaard"
+    url: "https://drive.google.com/file/d/1J8uaMMqvRHNYyZsv169qIrnAzeDw0ZGD/view?usp=sharing"
+    lang: da
+  - title: "Skal Danmark gå ind i bankunionen?"
+    outlet: "Politiken (kronik)"
+    year: 2019
+    url: "https://drive.google.com/file/d/1-fflZ0ZM167sPbGmHAdNuSfmsCi7nwJ2/view?usp=sharing"
+    lang: da
+  - title: "Det 2. vatikankoncil og den 3. demokratiseringsbølge"
+    outlet: "Katolsk Orientering (kronik)"
+    year: 2019
+    lang: da
+  - title: "Reformationen er alle reformers moder"
+    outlet: "Børsen (kronik)"
+    year: 2017
+    with: "Carl-Johan Dalgaard"
+    lang: da
+  - title: "Nationalbanken er ude på et skråplan"
+    outlet: "Børsen (kronik)"
+    year: 2017
+    with: "Nikolaj Malchow-Møller"
+    url: "https://drive.google.com/file/d/1MDQJucTRysEhkb4wBOpoLeVGVwsbSn42/view?usp=sharing"
+    lang: da
+  - title: "EU bør ikke handle om velstand, men om moral"
+    outlet: "Altinget (kommentar)"
+    year: 2016
+    lang: da
+  - title: "Skaber EU fred og velstand?"
+    outlet: "Finans (kronik)"
+    year: 2016
+    lang: da
+  - title: "Vækstkrise forværret af fast kronekurs"
+    outlet: "Berlingske (kronik)"
+    year: 2016
+    with: "Nikolaj Malchow-Møller"
+    url: "https://drive.google.com/file/d/1398ATXHZFn-DztEO24ppgNm4D5AnTdTo/view?usp=sharing"
+    lang: da
+  - title: "Når recession laver permanent skade på økonomien"
+    outlet: "Finans (kommentar)"
+    year: 2015
+    lang: da
+  - title: "En Marshall-plan til Nordafrika og Mellemøsten?"
+    outlet: "Finans (kommentar)"
+    year: 2015
+    lang: da
+  - title: "Politiserende nationalbankdirektører"
+    outlet: "Finans (kommentar)"
+    year: 2015
+    lang: da
+  - title: "Det skrøbelige europrojekt"
+    outlet: "Finans (kommentar)"
+    year: 2015
+    lang: da
+  - title: "Danmark og eurolandenes bankunion"
+    outlet: "Finans (kommentar)"
+    year: 2015
+    lang: da
+  - title: "Kan Afrika forsat levere høj økonomisk vækst?"
+    outlet: "Finans (kommentar)"
+    year: 2015
+    lang: da
+  - title: "Hvad skal vi gøre ved den pressede krone?"
+    outlet: "Information (kommentar)"
+    year: 2015
+    lang: da
+  - title: "Bankunionen handler om mere end økonomi"
+    outlet: "Berlingske (kommentar)"
+    year: 2014
+    url: "https://drive.google.com/file/d/1vrxCRnv6tghht1drE1xJqjBLb-IHgH0k/view?usp=sharing"
+    lang: da
+  - title: "Hvem er sin løn værd?"
+    outlet: "Information (kronik)"
+    year: 2014
+    with: "Peter Sandholt Jensen and Nikolaj Malchow-Møller"
+    url: "https://drive.google.com/file/d/1nIvh_8bT5_fyYxzyYJXHZ57SMPNllvv2/view?usp=sharing"
+    lang: da
+  - title: "Vi skal ikke holde fast i fastkurspolitikken"
+    outlet: "Politiken (kronik)"
+    year: 2014
+    with: "Nikolaj Malchow-Møller and Jens Nordvig"
+    url: "https://drive.google.com/file/d/1sVv01hcUzBZq-SXn8QmITe9hgaKz0jwR/view?usp=sharing"
+    lang: da
+  - title: "Afrikas vækstboom og dansk eksportfremme"
+    outlet: "Berlingske (kommentar)"
+    year: 2013
+    lang: da
+  - title: "Stor ståhej om mikroskopiske lån i bistandsarbejdet"
+    outlet: "Kristeligt Dagblad (kronik)"
+    year: 2011
+    with: "Nikolaj Malchow-Møller og Ole Dahl Rasmussen"
+    lang: da
+  - title: "Frihed frem for forandring?"
+    outlet: "Politik 13(3): 73-75"
+    year: 2010
+    lang: da
+  - title: "Der er brug for nytænkning i bistandspolitikken"
+    outlet: "Information (kronik)"
+    year: 2008
+    with: "Sam Jones"
+    lang: da
+  - title: "EU membership has many benefits, but economic growth is not one of them"
+    outlet: "The Conversation [reprinted by World Economic Forum]"
+    year: 2019
+    with: "Pieter Vanhuysse"
+    url: "https://doi.org/10.64628/AB.57kwc4pat"
+    lang: en
+  - title: "The Catholic work ethic: Weber may have been wrong in linking hard work to Protestantism"
+    outlet: "LSE blogs, London School of Economics and Political Science"
+    year: 2018
+    with: "Jeanet Bentzen, Carl-Johan Dalgaard, and Paul Sharp"
+    url: "https://blogs.lse.ac.uk/religionglobalsociety/2018/08/the-catholic-work-ethic-weber-may-have-been-wrong-in-linking-hard-work-to-protestantism/"
+    lang: en
+  - title: "Pre-reformation roots of the protestant ethic: Evidence of a nine centuries-old belief in the virtues of hard work stimulating economic growth"
+    outlet: "VoxEU column"
+    year: 2017
+    with: "Jeanet Bentzen, Carl-Johan Dalgaard, and Paul Sharp"
+    url: "https://cepr.org/voxeu/columns/pre-reformation-roots-protestant-ethic-evidence-nine-centuries-old-belief-virtues"
+    lang: en
+  - title: "Climate and the inequality of nations"
+    outlet: "OUPblog - Oxford University Press's Academic Insights for the Thinking World"
+    year: 2016
+    with: "Carl-Johan Dalgaard and Pablo Selaya"
+    url: "https://blog.oup.com/2016/03/climate-inequality-of-nations"
+    lang: en
+  - title: "Greece’s poor growth prospects"
+    outlet: "CEPS Commentary, Center for European Policy Studies"
+    year: 2015
+    with: "Mikkel Barslund"
+    url: "https://www.ceps.eu/ceps-publications/greeces-poor-growth-prospects/"
+    lang: en
+  - title: "Danish currency wobbles: A positive unintended side effect of the ECB’s QE?"
+    outlet: "CEPS Commentary, Center for European Policy Studies"
+    year: 2015
+    with: "Cinzia Alcidi and Mikkel Barslund"
+    url: "https://www.ceps.eu/ceps-publications/danish-currency-wobbles-positive-unintended-side-effect-ecbs-qe/"
+    lang: en
+  - title: "Can Greece ‘grow solvent’?"
+    outlet: "CEPS Commentary, Center for European Policy Studies"
+    year: 2011
+    with: "Mikkel Barslund and Daniel Gros"
+    url: "https://www.ceps.eu/ceps-publications/can-greece-grow-solvent/"
+    lang: en

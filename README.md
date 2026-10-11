@@ -15,7 +15,7 @@ setting; text is set in Fira Sans (self-hosted). The sun/moon button in the head
 | Home page sections (About, Recent publications, Commentary, Teaching, Contact) | `content/_index.md` |
 | Publications (one folder per item) | `content/publications/<year>-<short-title>/` |
 | Research page intro text | `content/publications/_index.md` |
-| Full commentary list | `content/commentary.md` |
+| Commentary (home shows the 5 newest; full list on /commentary/) | `data/commentary.yaml` (one entry per piece: title, outlet, year, url, with, lang) |
 | Vitae | `content/vitae.md` |
 | Navigation menu | `config/_default/menus.yaml` |
 | Site title, colours, fonts, dark mode, footer | `config/_default/params.yaml` |
@@ -87,6 +87,7 @@ The look is the theme's, with a few small, self-contained additions:
 
 - `layouts/_partials/hbx/blocks/tba-profile/`, `tba-section/`, `tba-publications/`: plain home-page blocks
   (profile, text section, recent publications).
+- `layouts/_partials/hbx/blocks/tba-commentary/` + `layouts/_partials/tba/commentary_row.html`: commentary lists.
 - `layouts/_partials/tba/`: publication entry, authors, venue line and grouping.
 - `layouts/publications/section.html` and `page.html`: Research page and individual paper pages.
 - `layouts/_partials/hooks/head-end/scholar-meta.html`: Google Scholar meta tags.

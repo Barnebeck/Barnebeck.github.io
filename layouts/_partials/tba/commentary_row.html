@@ -1,0 +1,14 @@
+{{/* One commentary item: title (linked when a URL exists), then outlet · year · co-authors. */}}
+{{ $it := .item }}
+<li class="tba-cm-row{{ if $it.url }} has-link{{ end }}">
+  <div class="tba-cm-main">
+    <div class="tba-cm-title" {{ if eq $it.lang "da" }}lang="da"{{ end }}>
+      {{ with $it.url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ $it.title }}</a>{{ else }}{{ $it.title }}{{ end }}
+    </div>
+    <div class="tba-cm-meta">
+      <span>{{ $it.outlet }}</span><span class="tba-sep">·</span><span>{{ $it.year }}</span>
+      {{ with $it.with }}<span class="tba-sep">·</span><span>with {{ . }}</span>{{ end }}
+    </div>
+  </div>
+  {{ if $.tag }}<span class="tba-cm-lang" title="{{ cond (eq $it.lang "da") "Danish" "English" }}">{{ upper $it.lang }}</span>{{ end }}
+</li>
