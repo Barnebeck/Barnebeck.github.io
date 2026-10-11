@@ -42,4 +42,8 @@ education:
       year: 1997
 ---
 
-I am a professor of economics at the University of Southern Denmark (SDU). Prior to joining SDU, I was assistant and associate professor at the University of Copenhagen and worked as a staff economist at the Danish central bank. My current research interests span political economy, comparative economics, and macroeconomics.
+I am a professor of economics at the University of Southern Denmark (SDU).
+
+Prior to joining SDU, I was assistant and associate professor at the University of Copenhagen and worked as a staff economist at the Danish central bank.
+
+My current research interests span political economy, comparative economics, and macroeconomics.
