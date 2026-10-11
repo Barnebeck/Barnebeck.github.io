@@ -132,3 +132,7 @@
 /* Stand-alone landing pages (Commentary, Vitae) */
 .tba-section > .tba-h1:first-child { margin-top: 0; }
 .tba-prose h3 { font-size: 1.15rem; }
+
+/* About: when the bio stands alone (no interests/education lists), centre it against the photo column */
+.tba-profile:not(:has(.tba-profile-lists > *)) { align-items: center; }
+.tba-profile:not(:has(.tba-profile-lists > *)) .tba-profile-lists { display: none; }

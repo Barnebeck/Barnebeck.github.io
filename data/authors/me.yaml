@@ -28,24 +28,6 @@ links:
     url: https://scholar.google.com/citations?hl=en&user=XP_ZiYYAAAAJ&view_op=list_works
     label: Google Scholar
 
-# Research interests shown on the home page (the Vitae page has its own list in content/vitae.md)
-interests:
-  - Comparative economics
-  - Economic development
-  - Macroeconomics
-  - Political economy
-
-education:
-  - degree: PhD (economics)
-    institution: University of Copenhagen
-    year: 2004
-  - degree: PhD student (concurrent enrollment)
-    institution: University of California, Berkeley
-    year: 2002-03
-  - degree: MSc (economics)
-    institution: University of Copenhagen
-    year: 2000
-
 # "Academic employment" from the Vitae page
 experience:
   - role: Full Professor

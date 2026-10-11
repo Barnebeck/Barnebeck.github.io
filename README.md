@@ -11,7 +11,7 @@ setting; text is set in Fira Sans (self-hosted). The sun/moon button in the head
 
 | What you want to change | File |
 | --- | --- |
-| Name, role, photo, short bio, links, research interests, education | `data/authors/me.yaml` (photo: `assets/media/authors/me.jpg`) |
+| Name, role, photo, short bio, links (optional `interests:` / `education:` lists would reappear under the bio) | `data/authors/me.yaml` (photo: `assets/media/authors/me.jpg`) |
 | Home page sections (About, Recent publications, Commentary, Teaching, Contact) | `content/_index.md` |
 | Publications (one folder per item) | `content/publications/<year>-<short-title>/` |
 | Research page intro text | `content/publications/_index.md` |
