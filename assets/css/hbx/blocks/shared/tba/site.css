@@ -96,7 +96,8 @@
 .tba-pub-title a { color: var(--tba-text); }
 .tba-pub-title a:hover { color: var(--tba-link); text-decoration: underline; text-underline-offset: 3px; }
 .tba-pub-meta { color: var(--tba-muted); margin-top: 0.2rem; font-size: 0.95rem; }
-.tba-me { font-weight: 600; color: var(--tba-text); }
+/* .tba-me marks Thomas in author lists; styled like the other authors */
+.tba-me { font-weight: inherit; color: inherit; }
 .tba-sep { color: var(--tba-faint); margin: 0 0.25rem; }
 .tba-pub-venue { color: var(--tba-muted); font-size: 0.95rem; }
 .tba-pub-links { margin-top: 0.45rem; }
