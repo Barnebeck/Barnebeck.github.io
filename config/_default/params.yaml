@@ -1,60 +1,59 @@
-# SITE SETUP
-# Guide: https://docs.hugoblox.com/tutorial/
-# Documentation: https://docs.hugoblox.com/
-# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
+# Site settings for the Hugo Blox Bootstrap edition
+# Docs: https://docs.hugoblox.com/
 
-# Appearance
 appearance:
-  mode: light
-  color: blue
+  theme_day: academic_blue    # data/themes/academic_blue.toml
+  theme_night: academic_blue
+  font: academic              # data/fonts/academic.toml (Montserrat + Roboto)
+  font_size: L
 
-# SEO
 marketing:
   seo:
     site_type: Person
-    local_business_type: ''
-    org_name: ''
     description: 'Thomas Barnebeck Andersen, Professor of Economics, University of Southern Denmark.'
     twitter: ''
   analytics:
     google_analytics: ''
-    baidu_tongji: ''
-    plausible: ''
-    fathom: ''
-    pirsch: ''
-  verification:
-    google: ''
-    baidu: ''
 
-# Site header
 header:
   navbar:
     enable: true
-    blox: "navbar"
-    fixed_to_top: true
+    align: l
+    show_logo: true   # shows the site title as the brand (no logo image)
+    show_language: false
+    show_day_night: false
     show_search: false
-    show_theme_chooser: false
-    logo:
-      text: "Thomas Barnebeck Andersen"
+    highlight_active_link: true
 
-# Site footer
 footer:
   copyright:
     notice: '© {year} Thomas Barnebeck Andersen'
     license:
       enable: false
-      allow_derivatives: false
-      share_alike: true
-      allow_commercial: false
 
-# Localization
 locale:
   date_format: 'Jan 2, 2006'
   time_format: '3:04 PM'
+  address_format: en-us
 
-# Site features
 features:
+  avatar:
+    gravatar: false
+    shape: circle
   math:
     enable: false
   privacy_pack:
     enable: false
+  search:
+    provider: ''
+
+publications:
+  date_format: January 2006
+  citation_style: apa
+
+power_ups:
+  hide_published_with: false
+
+extensions:
+  academicons:
+    enable: true   # needed for the Google Scholar icon

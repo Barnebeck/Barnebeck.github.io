@@ -1,17 +1,20 @@
-# Navigation links (weight = order)
+# Navigation (weight = order). '#name' links jump to sections on the home page.
 main:
   - name: Home
-    url: /
+    url: '#about'
     weight: 10
   - name: Research
-    url: research/
+    url: '#publications'
     weight: 20
   - name: Commentary
-    url: commentary/
+    url: '#commentary'
     weight: 30
   - name: Teaching
-    url: teaching/
+    url: '#teaching'
     weight: 40
-  - name: Vitae
+  - name: CV
     url: vitae/
     weight: 50
+  - name: Contact
+    url: '#contact'
+    weight: 60
