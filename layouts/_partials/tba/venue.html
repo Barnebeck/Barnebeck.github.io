@@ -1,4 +1,5 @@
-{{/* Venue line: journal / book / review, plus volume(issue), pages. Returns markdown-free HTML. */}}
+{{/* Venue line: journal / book / review name only. Volume, issue and pages are deliberately not shown here;
+     they stay in the front matter and are used for BibTeX (cite.bib) and the Google Scholar meta tags. */}}
 {{- $pub := .Params.publication | default dict -}}
 {{- $type := index (.Params.publication_types | default (slice "")) 0 -}}
 {{- $out := "" -}}
@@ -7,16 +8,12 @@
     {{- $out = printf "In <em>%s</em>" $pub.name -}}
     {{- with $pub.editor }}{{ $out = printf "%s, ed. %s" $out . }}{{ end -}}
     {{- with $pub.publisher }}{{ $out = printf "%s. %s" $out . }}{{ end -}}
-    {{- with $pub.pages }}{{ $out = printf "%s, pp. %s" $out . }}{{ end -}}
   {{- else if eq $type "report" -}}
     {{- $out = printf "<em>%s</em>" $pub.name -}}
     {{- with $pub.publisher }}{{ $out = printf "%s, %s" $out . }}{{ end -}}
   {{- else -}}
     {{- $out = printf "<em>%s</em>" $pub.name -}}
     {{- with .Params.publication_note }}{{ $out = printf "%s in %s" . $out }}{{ end -}}
-    {{- with $pub.volume }}{{ $out = printf "%s, %v" $out . }}{{ end -}}
-    {{- with $pub.issue }}{{ $out = printf "%s(%v)" $out . }}{{ end -}}
-    {{- with $pub.pages }}{{ $out = printf "%s, %s" $out . }}{{ end -}}
   {{- end -}}
 {{- end -}}
 {{- $out | safeHTML -}}
