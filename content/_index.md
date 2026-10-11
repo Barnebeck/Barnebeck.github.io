@@ -19,6 +19,7 @@ sections:
       filters:
         folders:
           - publication
+        publication_type: article-journal   # journal articles only (no book chapters/reviews)
       archive:
         enable: true
         text: See all publications
