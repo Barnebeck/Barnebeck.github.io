@@ -10,3 +10,10 @@
 // Profile column: smaller photo and name, as in the classic theme
 #profile .avatar { width: 200px; height: 200px; }
 #profile .portrait-title h2 { font-size: 1.25rem; font-weight: 300; color: rgba(0, 0, 0, 0.6); }
+// A little more space between bullet points in content lists
+// (Commentary, Teaching, Vitae, ...). Plain <ul> only, so menus and icon lists are untouched.
+.home-section ul:not([class]) > li,
+.universal-wrapper ul:not([class]) > li,
+.article-style ul:not([class]) > li { margin-bottom: 0.45em; }
+// Slight bump for the Education list under the bio
+.ul-edu li { margin-bottom: 0.3em; }
