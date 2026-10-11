@@ -33,7 +33,7 @@ Text is Markdown. In YAML, keep the indentation exactly as it is (spaces, not ta
      - me                         # "me" = Thomas (links to data/authors/me.yaml)
      - "Co-author Name"
    date: "2026-01-01"             # only the year is shown
-   publication_types: ["article-journal"]   # article-journal | chapter | article (book review) | report
+   publication_types: ["article-journal"]   # article-journal | chapter | article (book review) | report (policy publication)
    publication:
      name: "Journal Name"         # for a chapter: the book title
      volume: "12"                 # optional
@@ -56,8 +56,8 @@ Text is Markdown. In YAML, keep the indentation exactly as it is (spaces, not ta
    paper's page). Tip: `curl -LH "Accept: application/x-bibtex" https://doi.org/<DOI>` prints a publisher
    BibTeX record you can paste in.
 
-The Research page groups items automatically: *Journal articles* (`article-journal`, `report`),
-*Book chapters* (`chapter`) and *Book reviews* (`article`), newest first. The home page shows the 8 most
+The Research page groups items automatically: *Journal articles* (`article-journal`),
+*Book chapters* (`chapter`), *Book reviews* (`article`) and *Policy publications* (`report`), newest first. The home page shows the 8 most
 recent journal articles (change `count` in `content/_index.md`).
 
 Each publication page also carries Google Scholar `citation_*` meta tags (title, authors, year, journal or book,

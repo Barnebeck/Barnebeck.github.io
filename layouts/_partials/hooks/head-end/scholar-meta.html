@@ -12,7 +12,7 @@
   {{ if reflect.IsMap $pub }}
     {{ with $pub.name }}
       {{ if eq $type "chapter" }}<meta name="citation_inbook_title" content="{{ . }}">
-      {{ else if eq $type "report" }}<meta name="citation_technical_report_institution" content="{{ . }}">
+      {{ else if eq $type "report" }}<meta name="citation_technical_report_institution" content="{{ $pub.publisher | default . }}"><meta name="citation_technical_report_number" content="{{ . }}">
       {{ else }}<meta name="citation_journal_title" content="{{ . }}">{{ end }}
     {{ end }}
     {{ with $pub.volume }}<meta name="citation_volume" content="{{ . }}">{{ end }}

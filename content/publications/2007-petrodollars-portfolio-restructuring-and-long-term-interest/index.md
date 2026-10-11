@@ -5,9 +5,10 @@ authors:
   - "Sofie Nedergaard Fich"
   - "Frank Øland Hansen"
 date: "2007-01-01"
-publication_types: ["article-journal"]
+publication_types: ["report"]
 publication:
-  name: "Danmarks Nationalbank Monetary Review"
+  name: "Monetary Review, 3rd Quarter 2007"
+  publisher: "Danmarks Nationalbank"
 links:
   - type: source
     url: "https://www.nationalbanken.dk/media/l1mnqxqf/mon-3qtr-07-web.pdf"

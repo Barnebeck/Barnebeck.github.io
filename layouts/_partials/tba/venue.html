@@ -8,6 +8,9 @@
     {{- with $pub.editor }}{{ $out = printf "%s, ed. %s" $out . }}{{ end -}}
     {{- with $pub.publisher }}{{ $out = printf "%s. %s" $out . }}{{ end -}}
     {{- with $pub.pages }}{{ $out = printf "%s, pp. %s" $out . }}{{ end -}}
+  {{- else if eq $type "report" -}}
+    {{- $out = printf "<em>%s</em>" $pub.name -}}
+    {{- with $pub.publisher }}{{ $out = printf "%s, %s" $out . }}{{ end -}}
   {{- else -}}
     {{- $out = printf "<em>%s</em>" $pub.name -}}
     {{- with .Params.publication_note }}{{ $out = printf "%s in %s" . $out }}{{ end -}}

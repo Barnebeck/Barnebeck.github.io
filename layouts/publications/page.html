@@ -2,7 +2,7 @@
 {{/* Publication detail page: citation, links, abstract and BibTeX. */}}
 {{ $bib := .Resources.GetMatch "cite.bib" }}
 {{ $type := index (.Params.publication_types | default (slice "")) 0 }}
-{{ $typeLabel := dict "article-journal" "Journal article" "chapter" "Book chapter" "article" "Book review" "report" "Report" }}
+{{ $typeLabel := dict "article-journal" "Journal article" "chapter" "Book chapter" "article" "Book review" "report" "Policy publication" }}
 <div class="tba-page">
   <article class="tba-wrap tba-section tba-pub-page">
     <p class="tba-kicker"><a href="{{ "publications/" | relURL }}">Research</a> <span>/</span> {{ index $typeLabel $type | default "Publication" }}</p>
