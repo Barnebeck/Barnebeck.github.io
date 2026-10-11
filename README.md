@@ -45,9 +45,9 @@ Text is Markdown. In YAML, keep the indentation exactly as it is (spaces, not ta
    abstract: "..."                # optional; shown on the paper's page
    hugoblox:
      ids:
-       doi: "10.xxxx/xxxxx"       # creates the DOI button
+       doi: "10.xxxx/xxxxx"       # the Article button then points to https://doi.org/<DOI>
    links:
-     - type: source               # shown as "Article"
+     - type: source               # "Article" button when there is no DOI
        url: "https://..."
      - type: pdf                  # optional
        url: "https://..."
@@ -88,6 +88,7 @@ The look is the theme's, with a few small, self-contained additions:
 - `layouts/_partials/hbx/blocks/tba-profile/`, `tba-section/`, `tba-publications/`: plain home-page blocks
   (profile, text section, recent publications).
 - `layouts/_partials/hbx/blocks/tba-commentary/` + `layouts/_partials/tba/commentary_row.html`: commentary lists.
+- `layouts/_partials/tba/links.html`: one Article button per paper (DOI link if there is a DOI, else the article URL), PDF only if a different file, and Cite.
 - `layouts/_partials/tba/`: publication entry, authors, venue line and grouping.
 - `layouts/publications/section.html` and `page.html`: Research page and individual paper pages.
 - `layouts/_partials/hooks/head-end/scholar-meta.html`: Google Scholar meta tags.

@@ -9,7 +9,7 @@
     <h1 class="tba-h1">{{ .Title }}</h1>
     <p class="tba-pub-meta tba-pub-meta-lg">{{ partial "tba/authors.html" . }} <span class="tba-sep">·</span> {{ .Date.Format "2006" }}</p>
     <p class="tba-pub-venue tba-pub-venue-lg">{{ partial "tba/venue.html" . }}{{ with .Params.hugoblox.ids.doi }} <span class="tba-sep">·</span> <a href="https://doi.org/{{ . }}" target="_blank" rel="noopener">doi:{{ . }}</a>{{ end }}</p>
-    <div class="tba-pub-links tba-pub-links-lg">{{ partial "page_links" (dict "page" . "is_list" 0) }}</div>
+    <div class="tba-pub-links tba-pub-links-lg">{{ partial "tba/links.html" (dict "page" . "size" "large") }}</div>
 
     {{ with .Params.abstract }}
     <h2 class="tba-h3">Abstract</h2>

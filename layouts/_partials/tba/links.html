@@ -1,0 +1,20 @@
+{{/* Publication buttons: ONE "Article" button (https://doi.org/<DOI> when a DOI exists, otherwise the
+     first source/site/pdf link), a "PDF" button only when it is a different file, and "Cite" (cite.bib).
+     Args: .page, .size ("small" for lists, "large" for the paper page). */}}
+{{ $p := .page }}
+{{ $cls := printf "hb-attachment-link hb-attachment-link-%s" (.size | default "small") }}
+{{ $doi := $p.Params.hugoblox.ids.doi | default "" }}
+{{ $article := "" }}
+{{ $pdf := "" }}
+{{ with $doi }}{{ $article = printf "https://doi.org/%s" . }}{{ end }}
+{{ range $p.Params.links }}
+  {{ if and (not $article) (in (slice "source" "site") .type) .url }}{{ $article = .url }}{{ end }}
+{{ end }}
+{{ range $p.Params.links }}
+  {{ if and (eq .type "pdf") .url (not $pdf) }}{{ $pdf = .url }}{{ end }}
+{{ end }}
+{{ if and (not $article) $pdf }}{{ $article = $pdf }}{{ end }}
+{{ if eq $pdf $article }}{{ $pdf = "" }}{{ end }}
+{{ with $article }}<a class="{{ $cls }} tba-btn-article" href="{{ . }}" target="_blank" rel="noopener">Article</a>{{ end }}
+{{ with $pdf }}<a class="{{ $cls }} tba-btn-pdf" href="{{ . }}" target="_blank" rel="noopener">PDF</a>{{ end }}
+{{ with $p.Resources.GetMatch "cite.bib" }}<button class="{{ $cls }} js-cite-clipboard cursor-pointer" type="button" data-filename="{{ .RelPermalink }}">Cite</button>{{ end }}

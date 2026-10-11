@@ -8,5 +8,5 @@
     <span class="tba-sep">·</span> {{ $item.Date.Format "2006" }}
   </div>
   <div class="tba-pub-venue">{{ partial "tba/venue.html" $item }}</div>
-  <div class="tba-pub-links">{{ partial "page_links" (dict "page" $item "is_list" 1) }}</div>
+  <div class="tba-pub-links">{{ partial "tba/links.html" (dict "page" $item "size" "small") }}</div>
 </li>
