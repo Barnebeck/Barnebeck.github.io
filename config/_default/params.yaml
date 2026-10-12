@@ -27,9 +27,9 @@ hugoblox:
       primary: "#5fb4dc"
       secondary: "#5fb4dc"
 
-  # Typography: the "modern" pack's sizes/spacing, with Fira Sans for headings and body.
-  # Fira Sans is self-hosted (static/fonts/fira-sans/) and wired up in
-  # assets/css/hbx/blocks/shared/tba/fonts.css; "system-sans" here stops the theme loading Inter.
+  # Typography: the "modern" pack's sizes/spacing, with Inter for headings and body.
+  # Inter is self-hosted (static/fonts/inter/) and wired up in
+  # assets/css/hbx/blocks/shared/tba/fonts.css; "system-sans" here stops the theme loading its own (remote) font.
   typography:
     pack: "modern"
     families:
