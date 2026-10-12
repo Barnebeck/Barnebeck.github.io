@@ -1,5 +1,5 @@
 ---
-title: "Auditing, Capital Requirements and Franchise Values in Optimal Bank Regulation"
+title: "Franchise Values, Regulatory Monitoring, and Capital Requirements in Optimal Bank Regulation"
 authors:
   - me
   - "Thomas Harr"

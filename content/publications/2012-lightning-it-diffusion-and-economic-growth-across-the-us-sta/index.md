@@ -1,5 +1,5 @@
 ---
-title: "Lightning, IT Diffusion and Economic Growth across the US States"
+title: "Lightning, IT Diffusion, and Economic Growth Across U.S. States"
 authors:
   - me
   - "Jeanet Bentzen"

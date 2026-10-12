@@ -1,8 +1,8 @@
 ---
 title: "Commentaires sur l'intervention de Jean-Philippe Platteau"
 authors:
-  - me
   - "Finn Tarp"
+  - me
 date: "2004-01-01"
 publication_types: ["article-journal"]
 publication:

@@ -3,6 +3,7 @@ title: "Historical Migration and Contemporary Health"
 authors:
   - me
   - "Carl-Johan Dalgaard"
+  - "Christian Volmar Skovsgaard"
   - "Pablo Selaya"
 date: "2021-01-01"
 publication_types: ["article-journal"]

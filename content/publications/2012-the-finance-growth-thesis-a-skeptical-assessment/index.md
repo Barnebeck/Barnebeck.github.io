@@ -1,5 +1,5 @@
 ---
-title: "The Finance-Growth Thesis: A Skeptical Assessment"
+title: "The Finance–Growth Thesis: A Sceptical Assessment"
 authors:
   - me
   - "Sam Jones"

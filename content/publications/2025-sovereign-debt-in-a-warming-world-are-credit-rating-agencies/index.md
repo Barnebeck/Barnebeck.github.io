@@ -1,5 +1,5 @@
 ---
-title: "Sovereign Debt in a Warming World: Are Credit Rating Agencies Responding to Climate Change?"
+title: "Sovereign Debt in a Warming World: Are Credit Ratings Responding to Climate Risks?"
 authors:
   - me
 date: "2025-01-01"

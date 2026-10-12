@@ -1,5 +1,5 @@
 ---
-title: "Financial Liberalization, Financial Development and Economic Growth"
+title: "Financial Liberalization, Financial Development and Economic Growth in LDCs"
 authors:
   - me
   - "Finn Tarp"

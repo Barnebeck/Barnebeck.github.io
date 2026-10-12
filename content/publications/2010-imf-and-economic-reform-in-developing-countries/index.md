@@ -1,8 +1,8 @@
 ---
 title: "IMF and Economic Reform in Developing Countries"
 authors:
+  - "Philip Abbott"
   - me
-  - "Phil Abbott"
   - "Finn Tarp"
 date: "2010-01-01"
 publication_types: ["article-journal"]

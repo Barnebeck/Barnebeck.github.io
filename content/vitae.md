@@ -33,17 +33,9 @@ sections:
         - Knight of the Order of Dannebrog (Ridder af Dannebrogordenen), 2024.
         - Tuborg Foundation Business Economics Prize (Tuborgfondets Erhvervsøkonomiske Pris), 2002.
 
-        ### Fields of interest
-
-        - Comparative economics
-        - Economic development
-        - Economic history
-        - Macroeconomics
-        - Political economy
-
         ### Impact
 
-        My research is cited leading journals outside of economics, including in the cognitive sciences (e.g., *American Psychologist*, and *Behavioral and Brain Sciences*), the life sciences (e.g., *British Medical Journal* and *Molecular Biology and Evolution*), political science (e.g., *American Journal of Political Science*, *American Political Science Review*, and *Annual Review of Political Science*), and interdisciplinary areas (e.g., *Nature Human Behaviour*, *PNAS*, and *WIREs Climate Change*).
+        My research is cited in leading journals outside of economics, including in the cognitive sciences (e.g., *American Psychologist*, and *Behavioral and Brain Sciences*), the life sciences (e.g., *British Medical Journal* and *Molecular Biology and Evolution*), political science (e.g., *American Journal of Political Science*, *American Political Science Review*, and *Annual Review of Political Science*), and interdisciplinary areas (e.g., *Nature Human Behaviour*, *PNAS*, and *WIREs Climate Change*).
 
         It has been cited in popular books, including *Origins* by Lewis Dartnell, *The Journey of Humanity* by Oded Galor, *The Weirdest People in the World* by Joseph Henrich, *The Plague Cycle* by Charles Kenny, *The Open Sea* by Joseph G. Manning, *Grand Transitions* by Vaclav Smil, and *Amber Waves* by Catherine Zabinski.
 

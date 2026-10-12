@@ -46,6 +46,8 @@ imaging:
   anchor: smart
   hint: picture
 timeout: 600000
+# Taxonomy listing pages (authors, tags, publication types) are not used on this site.
+disableKinds: [taxonomy, term]
 taxonomies:
   author: authors
   tag: tags

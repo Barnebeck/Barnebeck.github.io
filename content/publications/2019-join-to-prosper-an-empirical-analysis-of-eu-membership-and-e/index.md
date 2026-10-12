@@ -1,5 +1,5 @@
 ---
-title: "Join to Prosper: An Empirical Analysis of EU Membership and Economic Growth?"
+title: "Join to Prosper? An Empirical Analysis of EU Membership and Economic Growth"
 authors:
   - me
   - "Mikkel Barslund"

@@ -1,9 +1,9 @@
 ---
-title: "Walking the talk: the need for a trial register for development interventions"
+title: "Walking the talk: the need for a trial registry for development interventions"
 authors:
-  - me
-  - "Nikolaj Malchow-Møller"
   - "Ole Dahl Rasmussen"
+  - "Nikolaj Malchow-Møller"
+  - me
 date: "2011-01-01"
 publication_types: ["article-journal"]
 publication:

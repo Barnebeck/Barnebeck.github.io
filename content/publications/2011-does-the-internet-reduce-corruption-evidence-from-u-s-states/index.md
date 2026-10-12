@@ -1,5 +1,5 @@
 ---
-title: "Does the Internet Reduce Corruption: Evidence from U.S. States and across Countries"
+title: "Does the Internet Reduce Corruption? Evidence from U.S. States and across Countries"
 authors:
   - me
   - "Jeanet Bentzen"
