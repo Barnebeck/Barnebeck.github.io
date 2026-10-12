@@ -29,17 +29,9 @@ sections:
     content:
       title: Teaching
       text: |-
-        **Advanced Macroeconomics (MSc)**
-
-        - Focuses on macroeconomic theory.
-
-        **Macroeconomic Analysis (BSc)**
-
-        - Introduces dynamic methods in macroeconomics.
-
-        **The Economics of European Integration (BSc)**
-
-        - Focuses on European monetary integration.
+        - Advanced Macroeconomics (MSc)
+        - Macroeconomic Analysis (BSc)
+        - The Economics of European Integration (BSc)
 
   - block: tba-section
     id: contact
