@@ -1,0 +1,15 @@
+{{/* schema.org Person markup for the home page (helps search engines identify the site owner). */}}
+{{ if .IsHome }}
+{{ $img := resources.Get "media/authors/me.jpg" }}
+{{ $p := dict
+  "@context" "https://schema.org"
+  "@type" "Person"
+  "name" "Thomas Barnebeck Andersen"
+  "jobTitle" "Professor of Economics"
+  "affiliation" (dict "@type" "CollegeOrUniversity" "name" "University of Southern Denmark" "alternateName" "SDU" "url" "https://www.sdu.dk/en")
+  "url" site.BaseURL
+  "sameAs" (slice "https://scholar.google.com/citations?user=XP_ZiYYAAAAJ" "https://www.linkedin.com/in/thomasbarnebeckandersen/" "https://orcid.org/0000-0002-7002-7087")
+}}
+{{ with $img }}{{ $p = merge $p (dict "image" .Permalink) }}{{ end }}
+<script type="application/ld+json">{{ $p | jsonify | safeJS }}</script>
+{{ end }}

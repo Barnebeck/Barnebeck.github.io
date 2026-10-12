@@ -1,6 +1,8 @@
 ---
 title: ''
 summary: ''
+seo:
+  title: 'Thomas Barnebeck Andersen – Professor of Economics, SDU'
 type: landing
 
 sections:
