@@ -21,7 +21,7 @@ sections:
   - block: tba-commentary
     id: commentary
     content:
-      title: Commentary
+      title: Media
       count: 5
 
   - block: tba-section

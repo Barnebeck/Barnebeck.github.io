@@ -6,7 +6,7 @@ main:
   - name: Research
     url: publications/
     weight: 20
-  - name: Commentary
+  - name: Media
     url: commentary/
     weight: 30
   - name: Teaching
