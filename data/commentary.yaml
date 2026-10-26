@@ -2,6 +2,10 @@
 # Fields: title, outlet, year, url (optional), with (optional co-authors), lang (da | en).
 # Add a new piece at the top of its language group. The home page shows the 5 most recent.
 items:
+  - title: "Frankrig bliver reddet af ECB, og derfor bliver landet ikke reformeret"
+    outlet: "Berlingske (kommentar)"
+    year: 2026
+    lang: da
   - title: "Det er blevet for nemt at indskrænke vores frihed. Sådan gør vi det sværere"
     outlet: "Berlingske (kronik)"
     year: 2026
