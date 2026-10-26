@@ -1,5 +1,5 @@
 {{/* Commentary block (data in data/commentary.yaml).
-     content.mode: "recent" (default) = newest N across languages with DA/EN tags + "All commentary" link;
+     content.mode: "recent" (default) = newest N across languages with DA/EN tags + "All media" link;
                    "full" = everything, under Danish / English headings. */}}
 {{ $page := .wcPage }}
 {{ $c := .wcBlock.content | default dict }}
@@ -7,10 +7,10 @@
 {{ $full := eq $c.mode "full" }}
 <div class="tba-wrap tba-section tba-cm">
   {{ if $full }}
-    <h1 class="tba-h1">{{ $c.title | default "Commentary" }}</h1>
+    <h1 class="tba-h1">{{ $c.title | default "Media" }}</h1>
     {{ with $c.subtitle }}<p class="tba-subtitle">{{ . }}</p>{{ end }}
     {{ $groups := slice (dict "id" "danish" "title" "Danish" "lang" "da") (dict "id" "english" "title" "English" "lang" "en") }}
-    <nav class="tba-jump" aria-label="Commentary languages">
+    <nav class="tba-jump" aria-label="Media languages">
       {{ range $groups }}<a href="#{{ .id }}">{{ .title }} <span>{{ len (where $items "lang" .lang) }}</span></a>{{ end }}
     </nav>
     {{ range $groups }}
@@ -21,8 +21,8 @@
     {{ end }}
   {{ else }}
     <div class="tba-head-row">
-      <h2 class="tba-h2">{{ $c.title | default "Commentary" }}</h2>
-      <a class="tba-more" href="{{ "commentary/" | relURL }}">All commentary ({{ len $items }}) →</a>
+      <h2 class="tba-h2">{{ $c.title | default "Media" }}</h2>
+      <a class="tba-more" href="{{ "commentary/" | relURL }}">All media ({{ len $items }}) →</a>
     </div>
     {{ $recent := sort $items "year" "desc" }}
     <ul class="tba-cm-list">{{ range first ($c.count | default 5) $recent }}{{ partial "tba/commentary_row.html" (dict "item" . "tag" true) }}{{ end }}</ul>
